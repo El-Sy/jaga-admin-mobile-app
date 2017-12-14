@@ -13,6 +13,17 @@ import {
   Image
 } from 'react-native';
 
+
+//import presentation compononents
+import BottomNav from './modules/BottomNav';
+
+//config
+import config from './config.js'
+
+
+//import styles
+import { styles } from './stylesheets/app';
+
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
     'Cmd+D or shake for dev menu',
@@ -29,7 +40,7 @@ class App extends Component {
 
 
         <View style={styles.content}>
-          <Image source={logo} style={styles.company_logo} />
+          <Image source={config.logo} style={styles.company_logo} />
           <Text style={styles.welcome}>
             Welcome to React Native!
         </Text>
@@ -41,8 +52,7 @@ class App extends Component {
           </Text>
         </View>
 
-        <View style={styles.bottom_nav}>
-        </View>
+        <BottomNav />
 
       </View>
     );
@@ -50,47 +60,3 @@ class App extends Component {
 }
 
 export default App;
-
-const logo = {
-  uri: "https://cdn.jaga-me.com/logos/v2/logo.white.large.png"
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#605ca8',
-  },
-  content:{
-    flex:1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor:"lightgray",
-    alignSelf: 'stretch'
-  },
-  bottom_nav:{
-    height:50,
-    backgroundColor:"#fafafa",
-    alignSelf: 'stretch'
-  },
-  top_nav:{
-    height:50,
-    backgroundColor:"#605ca8",
-    alignSelf: 'stretch'
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-  company_logo: {
-    height: 50,
-    width: 150
-  }
-});

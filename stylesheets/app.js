@@ -1,26 +1,43 @@
 import {
-    StyleSheet
-  } from 'react-native';
+  StyleSheet
+} from 'react-native';
 
 export const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
-      backgroundColor: '#605ca8',
-    },
-    welcome: {
-      fontSize: 20,
-      textAlign: 'center',
-      margin: 10,
-    },
-    instructions: {
-      textAlign: 'center',
-      color: '#333333',
-      marginBottom: 5,
-    },
-    company_logo: {
-      height:50,
-      width:150
-    }
-  });
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#605ca8',
+  },
+  content: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: "lightgray",
+    alignSelf: 'stretch'
+  },
+  bottom_nav: {
+    height: 50,
+    backgroundColor: "#fafafa",
+    alignSelf: 'stretch'
+  },
+  top_nav: {
+    height: 50,
+    backgroundColor: "#605ca8",
+    alignSelf: 'stretch'
+  },
+  welcome: {
+    fontSize: 20,
+    textAlign: 'center',
+    margin: 10,
+  },
+  instructions: {
+    textAlign: 'center',
+    color: '#333333',
+    marginBottom: 5,
+  },
+  company_logo: {
+    height: 50,
+    width: 150
+  }
+});
