@@ -1,9 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react';
 import {
   Platform,
@@ -16,9 +10,13 @@ import {
 
 //import presentation compononents
 import BottomNav from './modules/BottomNav';
+import PatientsList from './modules/Patients/PatientsList';
 
 //config
 import config from './config.js'
+
+//services
+// import {getPatients} from './modules/Patients/patient.service';
 
 
 //import styles
@@ -32,25 +30,17 @@ const instructions = Platform.select({
 });
 
 class App extends Component {
+
+  componentWillMount(){
+
+  }
+
   render() {
     return (
       <View style={styles.container}>
       <View style={styles.top_nav}>
         </View>
-
-
-        <View style={styles.content}>
-          <Image source={config.logo} style={styles.company_logo} />
-          <Text style={styles.welcome}>
-            Welcome to React Native!
-        </Text>
-          <Text style={styles.instructions}>
-            To get started, edit App.js
-        </Text>
-          <Text style={styles.instructions}>
-            {instructions}
-          </Text>
-        </View>
+        <PatientsList />
 
         <BottomNav />
 
@@ -58,5 +48,4 @@ class App extends Component {
     );
   }
 }
-
 export default App;

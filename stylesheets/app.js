@@ -14,12 +14,18 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: "lightgray",
-    alignSelf: 'stretch'
+    alignSelf: 'stretch',
+    flexDirection:'column'
   },
   bottom_nav: {
     height: 50,
     backgroundColor: "#fafafa",
-    alignSelf: 'stretch'
+    alignSelf: 'stretch',
+    flexDirection:"row"
+  },
+  bottom_nav_button:{
+      flex:1,
+      textAlign: 'center'
   },
   top_nav: {
     height: 50,
