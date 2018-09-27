@@ -1,51 +1,44 @@
 import React, { Component } from 'react';
-import {
-  Platform,
-  StyleSheet,
-  Text,
-  View,
-  Image
-} from 'react-native';
+import { connect } from 'react-redux';
 
+import RootTabs from './modules/RootTabs';
+import Login from './modules/Login';
+import Loading from './modules/Loading';
 
-//import presentation compononents
-import BottomNav from './modules/BottomNav';
-import PatientsList from './modules/Patients/PatientsList';
+import { fetchConfig } from './actions/general';
 
-//config
-import config from './config.js'
-
-//services
-// import {getPatients} from './modules/Patients/patient.service';
-
-
-//import styles
-import { styles } from './stylesheets/app';
-
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' +
-    'Cmd+D or shake for dev menu',
-  android: 'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
+// import config from './config.json';
 
 class App extends Component {
 
-  componentWillMount(){
-
+  componentDidMount() {
+    this.props.fetchConfig();
   }
 
   render() {
-    return (
-      <View style={styles.container}>
-      <View style={styles.top_nav}>
-        </View>
-        <PatientsList />
-
-        <BottomNav />
-
-      </View>
-    );
+    if (this.props.config != null && this.props.user) {
+      return <RootTabs config={this.props.config}/>;
+    } else if (!this.props.user) {
+      return <Login {...this.props}/>
+    } else if (this.props.config == null && !this.props.user) {
+      return <Loading />
+    }
   }
 }
-export default App;
+
+const getConfig = config => {
+  return config
+}
+
+const getUser = user => {
+  return user
+}
+
+const mapStateToProps = state => {
+  return {
+    config: getConfig(state.general.config),
+    user: getUser(state.user)
+  }
+}
+
+export default connect(mapStateToProps, { fetchConfig })(App);

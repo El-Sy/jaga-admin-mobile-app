@@ -1,0 +1,264 @@
+{
+    "CustomerFields": [
+        {
+            "label": "Details",
+            "key": "details",
+            "rows": [
+                {
+                    "label": "Status",
+                    "key": "status"
+                },
+                {
+                    "label": "Phone",
+                    "key": "phone"
+                },
+                {
+                    "label": "Email",
+                    "key": "email"
+                },
+                {
+                    "label": "Address",
+                    "key": "address"
+                }
+            ]
+        },
+        {
+            "label": "Lead",
+            "key": "lead",
+            "rows": [
+                {
+                    "label": "Lead Status",
+                    "key": "lead_status"
+                }
+            ]
+        },
+        {
+            "label": "Meta",
+            "key": "meta",
+            "rows": [
+                {
+                    "label": "Chargebee ID",
+                    "key": "cb_id"
+                },
+                {
+                    "label": "Created At",
+                    "key": "created_at_formatted"
+                },
+                {
+                    "label": "Deleted At",
+                    "key": "deleted_at_formatted"
+                }
+            ]
+        }
+    ],
+    "PatientFields": [
+        {
+            "key": "medical",
+            "rows": [
+                {
+                    "rows": [
+                        {
+                            "label": "Primary Diagnosis",
+                            "key": "primary_diagnosis"
+                        },
+                        {
+                            "label": "Secondary Diagnosis",
+                            "key": "secondary_diagnosis"
+                        },
+                        {
+                            "label": "Infectious Diseases",
+                            "key": "infectious_diseases"
+                        },
+                        {
+                            "label": "Allergies",
+                            "key": "allergies"
+                        },
+                        {
+                            "label": "Drug Allergies",
+                            "key": "drug_allergies"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "adl",
+            "rows": [
+                {
+                    "rows": [
+                        {
+                            "label": "Condition",
+                            "key": "condition"
+                        },
+                        {
+                            "label": "Mobility",
+                            "key": "mobility"
+                        },
+                        {
+                            "label": "Feeding",
+                            "key": "feeding"
+                        },
+                        {
+                            "label": "Bowel Management",
+                            "key": "bowel_management"
+                        },
+                        {
+                            "label": "Mental Status",
+                            "key": "mental_status"
+                        },
+                        {
+                            "label": "Respiratory Care",
+                            "key": "respiratory_care"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "products",
+            "rows": [
+                {
+                    "label": "Urine Catheter",
+                    "key": "urine_catheter",
+                    "rows": [
+                        {
+                            "label": "Type",
+                            "key": "catheter_type"
+                        },
+                        {
+                            "label": "Size",
+                            "key": "catheter_size"
+                        },
+                        {
+                            "label": "Last Changed",
+                            "key": "catheter_last_changed"
+                        }
+                    ]
+                },
+                {
+                    "label": "Nasogastric Tube (NGT)",
+                    "key": "nasogastric_tube_(ngt)",
+                    "rows": [
+                        {
+                            "label": "Type",
+                            "key": "ngt_type"
+                        },
+                        {
+                            "label": "Size",
+                            "key": "ngt_size"
+                        },
+                        {
+                            "label": "Last Changed",
+                            "key": "ngt_last_changed"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "JagaProFields": [
+        {
+            "label": "Basics",
+            "key": "basics",
+            "form": "default",
+            "rows": [
+                {
+                    "rows": [
+                        {
+                            "label": "status",
+                            "key": "jagapro_status"
+                        },
+                        {
+                            "label": "Vocations",
+                            "key": "vocations"
+                        },
+                        {
+                            "label": "Phone",
+                            "key": "phone"
+                        },
+                        {
+                            "label": "License Number",
+                            "key": "license_number"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "Location",
+            "key": "location",
+            "form": "default",
+            "rows": [
+                {
+                    "rows": [
+                        {
+                            "label": "Address",
+                            "key": "address"
+                        },
+                        {
+                            "label": "Latitude",
+                            "key": "latitude"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "Work Experience",
+            "key": "work",
+            "form": "collapsible",
+            "rows": null
+        },
+        {
+            "label": "Education",
+            "key": "edu",
+            "form": "collapsible",
+            "rows": null
+        },
+        {
+            "label": "Certifications",
+            "key": "cert",
+            "form": "collapsible",
+            "rows": null
+        }
+    ],
+    "RootNavConfigArray": [
+        {
+            "name": "Patients"
+        },
+        {
+            "name": "Customers"
+        },
+        {
+            "name": "JagaPros"
+        },
+        {
+            "name": "Settings"
+        }
+    ],
+    "PatientConfig": [
+        {
+            "name": "Medical"
+        },
+        {
+            "name": "ADL"
+        },
+        {
+            "name": "Products"
+        }
+    ],
+    "JagaProConfig": [
+        {
+            "name": "Basics"
+        },
+        {
+            "name": "Work"
+        },
+        {
+            "name": "Edu"
+        },
+        {
+            "name": "cert"
+        }
+    ]
+}

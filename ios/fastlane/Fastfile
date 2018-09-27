@@ -1,0 +1,28 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Push a new beta build to Fabric Beta"
+  lane :beta do
+    increment_build_number(xcodeproj: "JagaAdminMobileApp.xcodeproj")
+    build_app(workspace: "JagaAdminMobileApp.xcworkspace", scheme: "JagaAdminMobileApp",export_method: "development")
+    crashlytics(
+    api_token: "04f6cda329a984393b85b65ffd3ab93273f54c9c",
+    build_secret: "df3c2c24eae43190fbb0f51e0952336f9791602ca8799f0bce3d669289df4eb9"
+  )
+  end
+end

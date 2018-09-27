@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>499338806633-c79greu35i870h4piuplsh1lb9cks7mt.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.499338806633-c79greu35i870h4piuplsh1lb9cks7mt</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBusi63eq6dn-rstbUj9zgXpvk29tncfGE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>499338806633</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Jaga.Admin.Mobile</string>
+	<key>PROJECT_ID</key>
+	<string>jaga-admin-test</string>
+	<key>STORAGE_BUCKET</key>
+	<string>jaga-admin-test.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:499338806633:ios:dab7ff27262f8589</string>
+	<key>DATABASE_URL</key>
+	<string>https://jaga-admin-test.firebaseio.com</string>
+</dict>
+</plist>
