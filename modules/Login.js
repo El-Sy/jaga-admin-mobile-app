@@ -16,7 +16,7 @@ import { styles } from '../stylesheets/app';
 import Auth0 from 'react-native-auth0';
 
 import { addUser } from '../actions/general';
-const auth0 = new Auth0({ domain: 'leechuan.au.auth0.com', clientId: 'tUE5MZoFF0JQlE9trMe80jmYbz44OBYC' });
+const auth0 = new Auth0({ domain: process.env.REACT_APP_AUTH0_DOMAIN, clientId: process.env.REACT_APP_AUTH0_CLIENTID });
 
 class Login extends Component {
     state = {
